@@ -18,6 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        cosmic: "bg-gradient-cosmic text-primary-foreground hover:shadow-cosmic transition-all duration-300 hover:scale-105",
+        ethereal: "bg-card/50 border border-border/50 text-foreground hover:bg-card/80 hover:shadow-ethereal transition-all duration-300",
+        energy: "bg-accent/20 border border-accent/50 text-accent-foreground hover:bg-accent/30 hover:shadow-energy hover:animate-cosmic-glow transition-all duration-300"
       },
       size: {
         default: "h-10 px-4 py-2",

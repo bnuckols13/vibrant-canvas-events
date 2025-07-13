@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -63,6 +64,20 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-ethereal': 'var(--gradient-ethereal)',
+				'gradient-energy': 'var(--gradient-energy)'
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'ethereal': 'var(--shadow-ethereal)',
+				'energy': 'var(--shadow-energy)'
+			},
+			transitionTimingFunction: {
+				'mystical': 'var(--transition-mystical)',
+				'energy': 'var(--transition-energy)'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -84,11 +99,47 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'energy-flow': {
+					'0%': {
+						transform: 'translateY(0) scale(1)',
+						opacity: '0.8'
+					},
+					'50%': {
+						transform: 'translateY(-10px) scale(1.05)',
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(0) scale(1)',
+						opacity: '0.8'
+					}
+				},
+				'cosmic-glow': {
+					'0%': {
+						boxShadow: '0 0 20px hsl(var(--primary-glow) / 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 40px hsl(var(--primary-glow) / 0.6)'
+					},
+					'100%': {
+						boxShadow: '0 0 20px hsl(var(--primary-glow) / 0.3)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-15px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'energy-flow': 'energy-flow 3s ease-in-out infinite',
+				'cosmic-glow': 'cosmic-glow 4s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite'
 			}
 		}
 	},
