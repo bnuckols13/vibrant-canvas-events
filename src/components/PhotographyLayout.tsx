@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu } from "lucide-react";
-import heroImage from "@/assets/hero-nature.jpg";
+import heroImage from "@/assets/hero-elegant.jpg";
 
 const PhotographyLayout = () => {
   const navigationItems = [
@@ -19,16 +19,16 @@ const PhotographyLayout = () => {
       <header className="absolute top-0 left-0 right-0 z-50 p-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-xl font-light tracking-[0.2em] text-background mix-blend-difference">
-              ETHEREAL EXPRESSIONS
+            <h1 className="text-xl font-light tracking-[0.3em] text-foreground">
+              TALIA ROSE
             </h1>
           </div>
           
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-12">
             {navigationItems.map((item, index) => (
               <button 
                 key={index}
-                className="text-sm font-light tracking-wide text-background mix-blend-difference hover:opacity-70 transition-opacity"
+                className="text-sm font-light tracking-wide text-foreground hover:text-primary transition-colors"
               >
                 {item}
               </button>
@@ -36,7 +36,7 @@ const PhotographyLayout = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <button className="text-background mix-blend-difference lg:hidden">
+            <button className="text-foreground lg:hidden">
               <Menu className="w-6 h-6" />
             </button>
           </div>
@@ -51,28 +51,35 @@ const PhotographyLayout = () => {
           className="w-full h-full object-cover"
         />
         
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-background/20" />
+        {/* Overlay for text contrast */}
+        <div className="absolute inset-0 bg-background/10" />
 
         {/* Centered Content */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-background mix-blend-difference px-6">
-            <h2 className="text-5xl md:text-7xl font-light tracking-wide mb-6 leading-tight">
-              ETHEREAL
+          <div className="text-center text-foreground px-6">
+            <p className="text-lg font-light tracking-[0.2em] mb-4 text-muted-foreground">
+              presents
+            </p>
+            <h2 className="text-6xl md:text-8xl font-light tracking-[0.1em] mb-8 leading-tight">
+              COLLECTION
               <br />
-              EXPRESSIONS
+              <span className="text-5xl md:text-7xl">327</span>
             </h2>
-            <p className="text-lg font-light tracking-wide max-w-lg mx-auto leading-relaxed opacity-90">
-              Where nature's energy meets visual expression. 
-              Transformative art and intuitive readings in harmony.
+            <p className="text-base font-light tracking-wide max-w-md mx-auto leading-relaxed text-muted-foreground">
+              at Ethereal Gallery • October 1-15
+            </p>
+            <p className="text-base font-light tracking-wide max-w-md mx-auto leading-relaxed text-muted-foreground mt-4">
+              Opening Reception<br />
+              <span className="italic">Thursday, October 2</span><br />
+              5pm - 8pm
             </p>
           </div>
         </div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button className="text-background mix-blend-difference animate-bounce">
-            <ChevronDown className="w-6 h-6" />
+          <button className="text-muted-foreground animate-bounce">
+            <ChevronDown className="w-5 h-5" />
           </button>
         </div>
       </div>
