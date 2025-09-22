@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu } from "lucide-react";
-import heroImage from "@/assets/hero-elegant.jpg";
+import heroImage from "@/assets/hero-invitation.jpg";
 
 const PhotographyLayout = () => {
   const navigationItems = [
