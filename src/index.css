@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Mystical cosmic color palette */
-    --background: 240 15% 8%;
-    --foreground: 45 100% 90%;
+    /* Light airy nature-inspired palette */
+    --background: 120 20% 97%;
+    --foreground: 150 15% 15%;
 
-    --card: 240 20% 12%;
-    --card-foreground: 45 90% 88%;
+    --card: 120 30% 99%;
+    --card-foreground: 150 20% 10%;
 
-    --popover: 240 25% 10%;
-    --popover-foreground: 45 100% 90%;
+    --popover: 120 40% 98%;
+    --popover-foreground: 150 15% 15%;
 
-    /* Deep cosmic purple as primary */
-    --primary: 260 60% 45%;
-    --primary-foreground: 45 100% 95%;
-    --primary-glow: 260 80% 65%;
+    /* Sage green as primary */
+    --primary: 140 25% 55%;
+    --primary-foreground: 120 30% 99%;
+    --primary-glow: 140 35% 75%;
 
-    /* Ethereal gold as secondary */
-    --secondary: 45 85% 65%;
-    --secondary-foreground: 240 20% 15%;
+    /* Warm cream as secondary */
+    --secondary: 45 40% 92%;
+    --secondary-foreground: 150 20% 20%;
 
-    --muted: 240 15% 20%;
-    --muted-foreground: 45 30% 70%;
+    --muted: 120 15% 94%;
+    --muted-foreground: 150 10% 45%;
 
-    /* Mystical blue accent */
-    --accent: 220 70% 55%;
-    --accent-foreground: 45 100% 95%;
+    /* Soft blue-green accent */
+    --accent: 160 30% 70%;
+    --accent-foreground: 150 20% 15%;
 
     --destructive: 0 70% 55%;
-    --destructive-foreground: 45 100% 95%;
+    --destructive-foreground: 120 30% 99%;
 
-    --border: 240 20% 25%;
-    --input: 240 25% 15%;
-    --ring: 260 60% 45%;
+    --border: 120 15% 90%;
+    --input: 120 20% 95%;
+    --ring: 140 25% 55%;
 
     --radius: 0.75rem;
     
-    /* Mystical gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(260 60% 45%) 0%, hsl(220 70% 55%) 50%, hsl(45 85% 65%) 100%);
-    --gradient-ethereal: linear-gradient(180deg, hsl(240 15% 8%) 0%, hsl(240 20% 12%) 100%);
-    --gradient-energy: radial-gradient(circle at center, hsl(260 80% 65% / 0.3) 0%, transparent 70%);
+    /* Airy nature gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(140 25% 55%) 0%, hsl(160 30% 70%) 50%, hsl(45 40% 92%) 100%);
+    --gradient-ethereal: linear-gradient(180deg, hsl(120 20% 97%) 0%, hsl(120 30% 99%) 100%);
+    --gradient-energy: radial-gradient(circle at center, hsl(140 35% 75% / 0.2) 0%, transparent 70%);
     
-    /* Mystical shadows */
-    --shadow-cosmic: 0 10px 40px -10px hsl(260 60% 45% / 0.4);
-    --shadow-ethereal: 0 0 30px hsl(45 85% 65% / 0.2);
-    --shadow-energy: 0 0 50px hsl(220 70% 55% / 0.3);
+    /* Soft natural shadows */
+    --shadow-cosmic: 0 10px 40px -10px hsl(140 25% 55% / 0.2);
+    --shadow-ethereal: 0 0 30px hsl(140 35% 75% / 0.15);
+    --shadow-energy: 0 0 50px hsl(160 30% 70% / 0.2);
     
     /* Smooth transitions */
     --transition-mystical: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

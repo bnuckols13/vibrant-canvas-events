@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu } from "lucide-react";
-import heroImage from "@/assets/hero-cosmic.jpg";
+import heroImage from "@/assets/hero-nature.jpg";
 
 const PhotographyLayout = () => {
   const navigationItems = [
@@ -58,13 +58,13 @@ const PhotographyLayout = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-background mix-blend-difference px-6">
             <h2 className="text-5xl md:text-7xl font-light tracking-wide mb-6 leading-tight">
-              COSMIC
+              ETHEREAL
               <br />
-              ABSTRACTIONS
+              EXPRESSIONS
             </h2>
             <p className="text-lg font-light tracking-wide max-w-lg mx-auto leading-relaxed opacity-90">
-              Where spiritual energy meets visual expression. 
-              Transformative art and intuitive readings.
+              Where nature's energy meets visual expression. 
+              Transformative art and intuitive readings in harmony.
             </p>
           </div>
         </div>
