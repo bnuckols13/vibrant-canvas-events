@@ -22,26 +22,23 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-ethereal">
+    <section className="py-20 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* About Content */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <Sparkles className="w-8 h-8 text-secondary animate-cosmic-glow" />
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
-                About the Journey
-              </h2>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground tracking-wide">
+              ARTISTIC PRACTICE
+            </h2>
             
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-base text-muted-foreground leading-relaxed font-light">
               <p>
                 For over a decade, I've been bridging the realms of visual art and spiritual energy work, 
-                creating a unique practice that serves both the soul and the senses.
+                creating a practice that serves both the soul and the senses.
               </p>
               <p>
-                My abstract paintings are born from deep meditative states and energetic connections 
-                with universal forces. Each piece carries specific vibrational frequencies designed 
+                My abstract paintings emerge from deep meditative states and energetic connections 
+                with natural forces. Each piece carries specific vibrational frequencies designed 
                 to inspire, heal, and transform.
               </p>
               <p>
@@ -50,11 +47,11 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="mt-8">
-              <Button variant="cosmic" size="lg" className="mr-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
                 Learn More
               </Button>
-              <Button variant="ethereal" size="lg">
+              <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
                 Book Consultation
               </Button>
             </div>
@@ -62,23 +59,23 @@ const AboutSection = () => {
 
           {/* Services Grid */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
+            <h3 className="text-2xl font-light text-center mb-8 text-foreground tracking-wide">
               Offerings & Services
             </h3>
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="bg-card/30 border-border/30 hover:bg-card/50 transition-all duration-300 hover:shadow-ethereal"
+                className="bg-background border-border hover:shadow-ethereal transition-all duration-300"
               >
                 <CardContent className="p-6 flex items-start gap-4">
-                  <div className="p-3 rounded-full bg-accent/20 border border-accent/30">
-                    <service.icon className="w-6 h-6 text-accent" />
+                  <div className="p-3 rounded-full bg-accent/20">
+                    <service.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2 text-foreground">
+                    <h4 className="text-lg font-light mb-2 text-foreground tracking-wide">
                       {service.title}
                     </h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground font-light leading-relaxed">
                       {service.description}
                     </p>
                   </div>
