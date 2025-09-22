@@ -9,24 +9,24 @@ const ArtGallery = () => {
   const artworks = [
     {
       id: 1,
-      title: "Cosmic Flow",
-      description: "Purple and gold energies dancing in eternal harmony",
+      title: "Sweetheart",
+      description: "Flowing lines expressing love's eternal dance through geometric harmony",
       image: artwork1,
-      energy: "Transformation & Growth"
+      energy: "Love & Connection"
     },
     {
       id: 2,
-      title: "Ethereal Tides",
-      description: "Blue cosmic waves carrying messages from beyond",
+      title: "Sacred Flame",
+      description: "Minimalist meditation on inner light and spiritual illumination",
       image: artwork2,
-      energy: "Healing & Peace"
+      energy: "Inner Fire & Clarity"
     },
     {
       id: 3,
-      title: "Energy Vortex",
-      description: "Spiraling energies opening portals to higher consciousness",
+      title: "Mechanical Poetry",
+      description: "Geometric precision meets organic flow in perfect balance",
       image: artwork3,
-      energy: "Awakening & Insight"
+      energy: "Structure & Flow"
     }
   ];
 
