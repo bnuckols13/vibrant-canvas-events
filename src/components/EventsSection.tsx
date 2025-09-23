@@ -9,34 +9,22 @@ const EventsSection = () => {
       id: 1,
       title: "Cosmic Canvas Workshop",
       date: "March 15, 2024",
-      time: "2:00 PM - 5:00 PM",
       location: "Sacred Space Studio",
-      type: "Workshop",
-      description: "Learn to channel cosmic energies into abstract art while receiving personal energy insights.",
-      spots: "12 spots available",
-      price: "$85"
+      collaborators: "With meditation guide Sarah Chen"
     },
     {
       id: 2,
       title: "Full Moon Energy Reading Circle",
-      date: "March 25, 2024",
-      time: "7:00 PM - 9:00 PM",
+      date: "March 25, 2024", 
       location: "Online via Zoom",
-      type: "Group Reading",
-      description: "Monthly group session for collective energy reading and spiritual guidance.",
-      spots: "8 spots available",
-      price: "$35"
+      collaborators: "Community group session"
     },
     {
       id: 3,
       title: "Healing Art Exhibition Opening",
       date: "April 5, 2024",
-      time: "6:00 PM - 9:00 PM",
       location: "Mystic Gallery Downtown",
-      type: "Exhibition",
-      description: "Private viewing of new healing art collection with complimentary mini-readings.",
-      spots: "Open to all",
-      price: "Free"
+      collaborators: "Curated by Gallery Director Maria Santos"
     }
   ];
 
@@ -54,10 +42,10 @@ const EventsSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground tracking-wide">
-            UPCOMING EVENTS
+            EVENTS
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Join us for transformative experiences combining art, energy work, and mindful community.
+            Archive of transformative experiences combining art, energy work, and mindful community.
           </p>
         </div>
 
@@ -68,12 +56,6 @@ const EventsSection = () => {
               className="group bg-card border-border hover:shadow-ethereal transition-all duration-300"
             >
               <CardHeader className="pb-4">
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className={`${getEventTypeColor(event.type)} border font-light`}>
-                    {event.type}
-                  </Badge>
-                  <span className="text-lg font-light text-foreground">{event.price}</span>
-                </div>
                 <CardTitle className="text-xl font-light group-hover:text-accent transition-colors tracking-wide">
                   {event.title}
                 </CardTitle>
@@ -86,43 +68,17 @@ const EventsSection = () => {
                     <span>{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
-                    <Clock className="w-4 h-4 text-accent" />
-                    <span>{event.time}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
                     <MapPin className="w-4 h-4 text-accent" />
                     <span>{event.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Users className="w-4 h-4 text-accent" />
-                    <span>{event.spots}</span>
+                    <span>{event.collaborators}</span>
                   </div>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed font-light">
-                  {event.description}
-                </p>
-
-                <div className="pt-4">
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background"
-                  >
-                    Register Now
-                  </Button>
                 </div>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6 font-light">
-            Want to stay updated on future events and workshops?
-          </p>
-          <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
-            Join Our Community
-          </Button>
         </div>
       </div>
     </section>

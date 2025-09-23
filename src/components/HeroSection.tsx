@@ -34,13 +34,23 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-foreground text-foreground hover:bg-foreground hover:text-background"
+            onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Palette className="w-4 h-4 mr-2" />
             Explore Gallery
           </Button>
-          <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-foreground text-foreground hover:bg-foreground hover:text-background"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Calendar className="w-4 h-4 mr-2" />
-            Book a Reading
+            Get In Touch
           </Button>
         </div>
       </div>

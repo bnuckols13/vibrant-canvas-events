@@ -1,23 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Eye, Heart, Star } from "lucide-react";
+import { Star, Eye, Heart } from "lucide-react";
 
 const AboutSection = () => {
   const services = [
     {
-      icon: Eye,
-      title: "Energy Readings",
-      description: "Intuitive sessions that reveal your energetic patterns and spiritual guidance"
+      icon: Star,
+      title: "Tier 1: Order from Existing Catalog",
+      description: "Choose from our curated collection of energy-infused artworks ready for your space"
     },
     {
       icon: Heart,
-      title: "Healing Art",
-      description: "Custom artwork created specifically to channel healing energies for your space"
+      title: "Tier 2: Custom Design Session",
+      description: "Collaborative design process to create artwork specifically for your needs and space"
     },
     {
-      icon: Star,
-      title: "Cosmic Alignment",
-      description: "Sessions combining energy work with personalized artistic expressions"
+      icon: Eye,
+      title: "Tier 3: Expanded Custom Design Session",
+      description: "Comprehensive design experience with multiple consultations and energy readings"
     }
   ];
 
@@ -28,7 +28,7 @@ const AboutSection = () => {
           {/* About Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground tracking-wide">
-              ARTISTIC PRACTICE
+              ARTIST STATEMENT
             </h2>
             
             <div className="space-y-6 text-base text-muted-foreground leading-relaxed font-light">
@@ -47,20 +47,12 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
-                Learn More
-              </Button>
-              <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
-                Book Consultation
-              </Button>
-            </div>
           </div>
 
           {/* Services Grid */}
           <div className="space-y-6">
             <h3 className="text-2xl font-light text-center mb-8 text-foreground tracking-wide">
-              Offerings & Services
+              Offerings
             </h3>
             {services.map((service, index) => (
               <Card 
