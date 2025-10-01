@@ -4,6 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import artwork1 from "@/assets/artwork-1.jpg";
 import artwork2 from "@/assets/artwork-2.jpg";
 import artwork3 from "@/assets/artwork-3.jpg";
+import artwork4 from "@/assets/collection-wings.jpg";
 
 const scrollToFullCollection = () => {
   const element = document.getElementById('full-collection');
@@ -34,6 +35,13 @@ const ArtGallery = () => {
       description: "Geometric precision meets organic flow in perfect balance",
       image: artwork3,
       energy: "Structure & Flow"
+    },
+    {
+      id: 4,
+      title: "Wings",
+      description: "Delicate curves radiating outward in harmonious symmetry",
+      image: artwork4,
+      energy: "Freedom & Expansion"
     }
   ];
 
