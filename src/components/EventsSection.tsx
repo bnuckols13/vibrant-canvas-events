@@ -7,24 +7,27 @@ const EventsSection = () => {
   const events = [
     {
       id: 1,
-      title: "Cosmic Canvas Workshop",
-      date: "March 15, 2024",
-      location: "Sacred Space Studio",
-      collaborators: "With meditation guide Sarah Chen"
+      title: "Gallery Show",
+      date: "February 16, 2025",
+      location: "Sergio's Style",
+      collaborators: "Hosted by Cullen J Sanchez",
+      description: "Six designs in group slide show"
     },
     {
       id: 2,
-      title: "Full Moon Energy Reading Circle",
-      date: "March 25, 2024", 
-      location: "Online via Zoom",
-      collaborators: "Community group session"
+      title: "LavenderLUX",
+      date: "June 21, 2025", 
+      location: "Bottlerocket",
+      collaborators: "Hosted by Sour Flower",
+      description: "Three framed prints in public show"
     },
     {
       id: 3,
-      title: "Healing Art Exhibition Opening",
-      date: "April 5, 2024",
-      location: "Mystic Gallery Downtown",
-      collaborators: "Curated by Gallery Director Maria Santos"
+      title: "Collection 327",
+      date: "October 1-16, 2025",
+      location: "KLVN Coffee Lab",
+      collaborators: "Hosted by Talia Rose",
+      description: "Solo coffee shop installation"
     }
   ];
 
@@ -45,7 +48,7 @@ const EventsSection = () => {
             EVENTS
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Archive of transformative experiences combining art, energy work, and mindful community.
+            Archive of exhibitions and collaborations.
           </p>
         </div>
 
@@ -75,6 +78,11 @@ const EventsSection = () => {
                     <Users className="w-4 h-4 text-accent" />
                     <span>{event.collaborators}</span>
                   </div>
+                  {event.description && (
+                    <p className="text-muted-foreground italic pt-2">
+                      {event.description}
+                    </p>
+                  )}
                 </div>
               </CardContent>
             </Card>

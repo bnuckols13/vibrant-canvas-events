@@ -44,29 +44,18 @@ const ArtGallery = () => {
           </p>
         </div>
 
-        {/* Featured Image */}
-        <div className="mb-12">
-          <div className="relative max-w-2xl mx-auto">
-            <img 
-              src={artwork1} 
-              alt="Featured Artwork"
-              className="w-full h-96 object-cover rounded-lg shadow-ethereal"
-            />
-          </div>
-        </div>
-
         {/* Carousel */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <Carousel className="w-full">
             <CarouselContent>
               {artworks.map((artwork) => (
-                <CarouselItem key={artwork.id} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={artwork.id} className="lg:basis-1/3">
                   <Card className="group overflow-hidden bg-card border-border/30 hover:shadow-ethereal transition-all duration-300">
                     <div className="relative overflow-hidden">
                       <img 
                         src={artwork.image} 
                         alt={artwork.title}
-                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/80">
                         <Button variant="outline" size="sm" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
@@ -91,8 +80,8 @@ const ArtGallery = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="h-12 w-12 -left-6" />
+            <CarouselNext className="h-12 w-12 -right-6" />
           </Carousel>
         </div>
         

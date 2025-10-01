@@ -11,11 +11,10 @@ const ContactSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground tracking-wide">
-            CONNECT WITH ME
+            GET IN TOUCH
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Ready to explore your energetic landscape or commission a custom piece? 
-            Let's begin this transformative journey together.
+            Interested in your own piece of collection 327? Send a message to get started.
           </p>
         </div>
 
@@ -23,7 +22,7 @@ const ContactSection = () => {
         <Card className="bg-background border-border">
           <CardContent className="p-8">
             <h3 className="text-2xl font-light mb-6 text-foreground tracking-wide">
-              Get In Touch
+              CONNECT WITH ME
             </h3>
             
             <form className="space-y-6">
@@ -72,6 +71,18 @@ const ContactSection = () => {
 
               <div>
                 <label className="block text-sm font-light text-foreground mb-2">
+                  What part of the sliding scale are you interested in?
+                </label>
+                <select className="w-full px-3 py-2 rounded-md bg-muted border border-border focus:border-accent focus:outline-none text-foreground">
+                  <option>Entry Range</option>
+                  <option>Middle Range</option>
+                  <option>High Range</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-light text-foreground mb-2">
                   How did you find my work?
                 </label>
                 <Textarea 
@@ -79,18 +90,6 @@ const ContactSection = () => {
                   rows={3}
                   className="bg-muted border-border focus:border-accent"
                 />
-              </div>
-
-              <div>
-                <label className="block text-sm font-light text-foreground mb-2">
-                  Which tier interests you?
-                </label>
-                <select className="w-full px-3 py-2 rounded-md bg-muted border border-border focus:border-accent focus:outline-none text-foreground">
-                  <option>Tier 1: Order from Existing Catalog</option>
-                  <option>Tier 2: Custom Design Session</option>
-                  <option>Tier 3: Expanded Custom Design Session</option>
-                  <option>General Inquiry</option>
-                </select>
               </div>
 
               <div>
