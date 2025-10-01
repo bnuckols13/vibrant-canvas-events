@@ -3,8 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    setTimeout(() => {
+      toast({
+        title: "Thanks! I'll be in contact soon ✨",
+        description: "I'm excited to connect with you about your art journey.",
+      });
+      
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+      setIsSubmitting(false);
+    }, 1000);
+  };
 
   return (
     <section id="contact" className="py-20 px-6 bg-secondary">
@@ -25,7 +46,7 @@ const ContactSection = () => {
               CONNECT WITH ME
             </h3>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-light text-foreground mb-2">
@@ -113,9 +134,15 @@ const ContactSection = () => {
                 />
               </div>
 
-              <Button variant="outline" size="lg" className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background">
+              <Button 
+                type="submit"
+                variant="outline" 
+                size="lg" 
+                className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background"
+                disabled={isSubmitting}
+              >
                 <Send className="w-4 h-4 mr-2" />
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </CardContent>
