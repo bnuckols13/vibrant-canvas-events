@@ -1,7 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Eye } from "lucide-react";
 import artwork1 from "@/assets/artwork-1.jpg";
 import artwork2 from "@/assets/artwork-2.jpg";
 import artwork3 from "@/assets/artwork-3.jpg";
@@ -51,18 +49,12 @@ const ArtGallery = () => {
               {artworks.map((artwork) => (
                 <CarouselItem key={artwork.id} className="lg:basis-1/3">
                   <Card className="group overflow-hidden bg-card border-border/30 hover:shadow-ethereal transition-all duration-300">
-                    <div className="relative overflow-hidden">
+                    <div className="relative">
                       <img 
                         src={artwork.image} 
                         alt={artwork.title}
-                        className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-80 object-contain bg-white"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/80">
-                        <Button variant="outline" size="sm" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
-                          <Eye className="w-4 h-4 mr-2" />
-                          View Details
-                        </Button>
-                      </div>
                     </div>
                     
                     <CardContent className="p-4">
@@ -83,12 +75,6 @@ const ArtGallery = () => {
             <CarouselPrevious className="h-12 w-12 -left-6" />
             <CarouselNext className="h-12 w-12 -right-6" />
           </Carousel>
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background">
-            View Full Collection
-          </Button>
         </div>
       </div>
     </section>
