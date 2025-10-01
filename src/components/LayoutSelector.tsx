@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ArtGallery from "@/components/ArtGallery";
 import AboutSection from "@/components/AboutSection";
 import EventsSection from "@/components/EventsSection";
+import FullCollectionSection from "@/components/FullCollectionSection";
 import ContactSection from "@/components/ContactSection";
 
 const LayoutSelector = () => {
@@ -12,6 +13,7 @@ const LayoutSelector = () => {
       <ArtGallery />
       <AboutSection />
       <EventsSection />
+      <FullCollectionSection />
       <ContactSection />
     </div>
   );

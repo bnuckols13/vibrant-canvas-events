@@ -1,8 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import artwork1 from "@/assets/artwork-1.jpg";
 import artwork2 from "@/assets/artwork-2.jpg";
 import artwork3 from "@/assets/artwork-3.jpg";
+
+const scrollToFullCollection = () => {
+  const element = document.getElementById('full-collection');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 const ArtGallery = () => {
   const artworks = [
@@ -75,6 +83,17 @@ const ArtGallery = () => {
             <CarouselPrevious className="h-12 w-12 -left-6" />
             <CarouselNext className="h-12 w-12 -right-6" />
           </Carousel>
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            onClick={scrollToFullCollection}
+            className="border-foreground text-foreground hover:bg-foreground hover:text-background"
+          >
+            View Full Collection
+          </Button>
         </div>
       </div>
     </section>
