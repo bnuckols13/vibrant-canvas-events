@@ -1,21 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Calendar, Palette } from "lucide-react";
-import heroImage from "@/assets/hero-invitation.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with elegant botanical elements */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-background/20" />
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">        
