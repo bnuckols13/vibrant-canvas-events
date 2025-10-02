@@ -24,7 +24,7 @@ const HeroSection = () => {
             variant="outline" 
             size="lg" 
             className="border-foreground text-foreground hover:bg-foreground hover:text-background"
-            onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('full-collection')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <Palette className="w-4 h-4 mr-2" />
             Explore Gallery
