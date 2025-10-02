@@ -8,17 +8,15 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">        
         <h1 className="text-6xl md:text-8xl font-light mb-6 text-foreground leading-tight tracking-wide">
-          TALIA ROSE
+          COLLECTION 327
         </h1>
         
-        <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-[0.1em]">
-          Abstract Artist & Energy Reader
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 font-light tracking-[0.1em]">
+          by Talia Rose
         </p>
         
         <p className="text-base text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Where nature's energy meets visual expression. Discover transformative artwork 
-          that channels spiritual insights and natural energies into elegant 
-          abstract compositions.
+          A collection of abstract geometric line drawings
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

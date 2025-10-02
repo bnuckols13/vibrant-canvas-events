@@ -32,11 +32,6 @@ const FullCollectionSection = () => {
       id: 5,
       title: "Shifting",
       image: collectionShifting,
-    },
-    {
-      id: 6,
-      title: "Spiral Eyes",
-      image: collectionSpiralEyes,
     }
   ];
 
@@ -44,12 +39,9 @@ const FullCollectionSection = () => {
     <section id="full-collection" className="py-20 px-6 bg-secondary">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground tracking-wide">
-            FULL COLLECTION
+          <h2 className="text-4xl md:text-5xl font-light text-foreground tracking-wide">
+            COLLECTION 327
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Explore the complete Collection 327
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

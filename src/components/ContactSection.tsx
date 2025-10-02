@@ -17,8 +17,7 @@ const ContactSection = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Thanks! I'll be in contact soon ✨",
-        description: "I'm excited to connect with you about your art journey.",
+        title: "Thanks! I'll be in contact soon 😊",
       });
       
       // Reset form
